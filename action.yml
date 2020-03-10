@@ -1,0 +1,34 @@
+name: 'Aws Elastic Beanstalk Deploy'
+description: 'Deploy a zip file to AWS Elastic Beanstalk'
+author: 'Thiago Bernardes'
+runs:
+  using: 'node12'
+  main: 'deploy.js'
+inputs:
+  aws_access_key:
+    description: 'AWS Access Key'
+    required: true
+  aws_secret_key:
+    description: 'AWS Secret Key'
+    required: true
+  region:
+    description: 'AWS Region'
+    required: true
+  application_name:
+    description: 'Beanstalk application name'
+    required: true
+  environment_name:
+    description: 'Beanstalk environment name'
+    required: true
+  version_label:
+    description: 'Version label for new Beanstalk version'
+    required: true
+  deployment_package:
+    description: 'Zip file with the version to deploy. If skipped the action will deploy existing version.'
+    required: false
+  use_existing_version_if_available:
+    description: 'If set to "true" then the action will deploy an existing version with the given version_label if it already exists, but otherwise create the version and deploy it.'
+    required: false
+branding:
+  icon: 'arrow-up'  
+  color: 'green'

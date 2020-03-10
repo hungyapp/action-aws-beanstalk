@@ -1,0 +1,27 @@
+{
+  "name": "aws-beanstalk",
+  "version": "1.0.0",
+  "description": "GitHub Action + command line tool to deploy to AWS Elastic Beanstalk.",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin" : { "beanstalk-deploy" : "./deploy.js"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungyapp/action-aws-beanstalk.git"
+  },
+  "keywords": [
+    "AWS",
+    "github-actions",
+    "github actions",
+    "elastic beanstalk",
+    "deploy"
+  ],
+  "author": "Thiago Bernardes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hungyapp/action-aws-beanstalk/issues"
+  },
+  "homepage": "https://github.com/hungyapp/action-aws-beanstalk#readme"
+}
